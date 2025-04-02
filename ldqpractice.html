@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Print Name Twice</title>
+</head>
+<body>
+
+<h1>Click the button to print your name twice:</h1>
+
+<button onclick="printNameTwice()">Submit</button>
+
+<div id="output"></div>
+
+<script>
+function printNameTwice() {
+  let name = "Joshua Ismael"; // Replace with your actual name
+  let result = "";
+
+  for (let i = 0; i < 2; i++) {
+    result += name + "<br>";
+  }
+
+  document.getElementById("output").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
